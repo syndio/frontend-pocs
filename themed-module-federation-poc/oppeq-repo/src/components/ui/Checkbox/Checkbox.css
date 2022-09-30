@@ -1,0 +1,19 @@
+.syo-checkbox-container-label {
+  @apply flex items-center;
+}
+
+.syo-checkbox-icons {
+  @apply relative mr-4;
+}
+
+.syo-checkbox-icons svg {
+  @apply absolute left-0 bottom-1/2 transform translate-y-1/2;
+}
+
+.syo-checkbox-input {
+  @apply opacity-0 -mr-4;
+}
+
+.syo-checkbox-label {
+  @apply prose text-gray-600;
+}

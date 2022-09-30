@@ -1,0 +1,12 @@
+.ico {
+  @apply fill-current inline-block overflow-visible;
+}
+
+.ico-transparent {
+  @apply bg-transparent text-white;
+}
+
+.ico-primary,
+.ico-secondary {
+  @apply text-white;
+}

@@ -1,0 +1,15 @@
+.syo-truncated-list {
+  @apply flex items-center prose text-gray-600;
+}
+
+.syo-truncated-list-item:not(:first-of-type) {
+  @apply pl-2;
+}
+
+.syo-truncated-list-item {
+  @apply truncate;
+}
+
+.syo-truncated-list-item_truncated-text {
+  @apply text-gray-500 pl-2 flex-shrink-0 text-sm;
+}

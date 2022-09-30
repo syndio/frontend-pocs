@@ -1,0 +1,76 @@
+.toggle-bg {
+  @apply bg-white border border-gray-300 flex justify-start;
+}
+
+input:checked + .toggle-bg {
+  @apply bg-actionPrimary border border-actionPrimary;
+}
+
+.toggle-bg:after {
+  content: '';
+  @apply relative bg-gray-400 border border-white rounded-full transition shadow-sm left-auto;
+}
+
+.toggle-bg-8:after {
+  height: 8.5px !important;
+  width: 8.5px !important;
+}
+
+.toggle-bg-12:after {
+  height: 12px !important;
+  width: 12px !important;
+}
+
+.toggle-bg-16:after {
+  left: 0.8px !important;
+  top: 1px !important;
+  height: 13.5px !important;
+  width: 13.5px !important;
+}
+
+.toggle-bg-20:after {
+  height: 19px !important;
+  width: 19px !important;
+}
+
+.toggle-bg-24:after {
+  height: 22.5px !important;
+  width: 22.5px !important;
+}
+
+.toggle-bg-28:after {
+  height: 26px !important;
+  width: 26px !important;
+}
+
+.toggle-bg-32:after {
+  height: 26px !important;
+  width: 26px !important;
+}
+
+input:checked + .toggle-bg:after {
+  @apply bg-white border border-actionPrimary;
+}
+
+input:checked + .toggle-bg-8:after {
+  transform: translateX(120%);
+}
+
+input:checked + .toggle-bg-12:after {
+  transform: translateX(116%);
+}
+
+input:checked + .toggle-bg-16:after {
+  left: 0 !important;
+  transform: translateX(137%);
+}
+
+input:checked + .toggle-bg-20:after {
+  transform: translateX(110%);
+}
+
+input:checked + .toggle-bg-24:after,
+input:checked + .toggle-bg-28:after,
+input:checked + .toggle-bg-32:after {
+  transform: translateX(108%);
+}

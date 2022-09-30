@@ -1,0 +1,71 @@
+@layer components {
+  .syo-table {
+    @apply max-w-full h-full overflow-auto;
+  }
+
+  .syo-thead {
+    @apply font-semibold text-base;
+    line-height: 1.2;
+  }
+
+  .syo-thead__tr {
+    @apply px-5 pl-0;
+  }
+
+  .syo-tbody__tr {
+    @apply pr-5 pl-0;
+  }
+
+  .syo-th {
+    @apply pr-2 py-3;
+  }
+  .syo-td {
+    @apply flex items-center py-5 pr-2 border-b border-borderLightest;
+  }
+
+  .syo-td_sticky,
+  .syo-th_sticky {
+    @apply left-5 top-0 sticky z-10 bg-white;
+  }
+
+  .syo-sort {
+    @apply align-text-bottom -mr-4;
+  }
+
+  .syo-sort svg {
+    @apply ml-1 text-actionPrimary;
+  }
+
+  .syo-no-data {
+    @apply flex justify-center;
+  }
+
+  .syo-filters {
+    @apply flex gap-x-2;
+  }
+
+  .syo-actions {
+    @apply flex gap-x-2;
+  }
+
+  .syo-table .syo-pagination {
+    @apply mx-3 mt-5;
+  }
+
+  .syo-table__loading-container {
+    @apply flex flex-col items-center;
+  }
+
+  .syo-table__loading-spinner {
+    @apply col-span-12 text-center mx-auto my-12;
+  }
+
+  .syo-table__loading-message {
+    @apply text-lg;
+  }
+
+  .syo-th_sticky_last,
+  .syo-td_sticky_last {
+    @apply border-r border-borderLightest;
+  }
+}

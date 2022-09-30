@@ -1,0 +1,32 @@
+.syo-callout__icon {
+  @apply flex-none mr-8;
+}
+
+.syo-callout__wrapper {
+  @apply font-sans flex justify-center items-center border border-solid border-borderLight rounded-md p-8;
+}
+
+.syo-callout__children {
+  @apply flex flex-grow justify-center items-center;
+}
+
+.syo-callout__children > div {
+  @apply flex-grow;
+}
+
+.syo-callout__children .syo-btn {
+  @apply ml-8;
+}
+
+.syo-callout__children h1,
+.syo-callout__children h2,
+.syo-callout__children h3,
+.syo-callout__children h4,
+.syo-callout__children h5,
+.syo-callout__children h6 {
+  @apply m-0;
+}
+
+.syo-callout__children p {
+  @apply mb-1;
+}

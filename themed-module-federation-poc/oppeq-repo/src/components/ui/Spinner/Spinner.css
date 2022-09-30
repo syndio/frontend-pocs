@@ -1,0 +1,25 @@
+@keyframes syo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.syo-spinner__wrapper {
+  @apply flex justify-center;
+}
+
+.syo-spinner__svg {
+  @apply text-gray h-10 w-10;
+  animation: syo-spin 1s linear infinite;
+}
+
+.syo-spinner__circle {
+  @apply opacity-25;
+}
+
+.syo-spinner__path {
+  @apply opacity-75;
+}

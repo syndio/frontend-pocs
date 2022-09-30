@@ -1,0 +1,51 @@
+.syo-pill {
+  @apply font-sans font-medium border-0 transition-colors duration-500 ease-in-out inline-block;
+}
+
+.syo-pill--size-8 {
+  @apply rounded-2xl text-xs px-6 py-2;
+}
+
+.syo-pill--size-12 {
+  @apply rounded-2xl text-sm px-7 py-2;
+}
+
+.syo-pill--size-16 {
+  @apply rounded-2xl text-base px-8 py-2;
+}
+
+.syo-pill--size-20 {
+  @apply rounded-3xl text-lg px-10 py-2;
+}
+
+.syo-pill--size-24 {
+  @apply rounded-3xl text-xl px-10 py-2;
+}
+
+.syo-pill--size-28 {
+  @apply rounded-3xl text-2xl px-14 py-4;
+}
+
+.syo-pill--size-32 {
+  @apply rounded-3xl text-3xl px-16 py-4;
+}
+
+.syo-pill--bg-transparent {
+  @apply text-actionPrimary;
+}
+
+.syo-pill--bg-fill {
+  @apply bg-actionBg text-primary font-semibold;
+}
+
+.syo-pill__pointer {
+  @apply cursor-pointer;
+}
+
+.actionPrimary {
+  @apply bg-actionPrimary text-white !important;
+}
+
+.actionPrimary:hover {
+  @apply bg-actionAccent text-white !important;
+}

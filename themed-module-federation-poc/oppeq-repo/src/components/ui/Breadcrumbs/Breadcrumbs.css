@@ -1,0 +1,5 @@
+@layer components {
+  .syo-breadcrumbs__wrapper {
+    @apply flex list-none m-0 p-0 mb-4;
+  }
+}

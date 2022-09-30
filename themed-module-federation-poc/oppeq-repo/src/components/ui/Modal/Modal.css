@@ -1,0 +1,45 @@
+@layer components {
+  .syo-modal__bg {
+    @apply fixed h-screen w-screen inset-x-0 inset-y-0 opacity-50 bg-gray-600 z-10;
+  }
+
+  .syo-modal__bg--transparent {
+    @apply bg-transparent;
+  }
+
+  .syo-modal {
+    @apply bg-white;
+    box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .syo-modal__scroll {
+    @apply w-screen h-screen overflow-auto inset-x-0 inset-y-0 fixed z-10 max-h-full flex flex-col items-center justify-center;
+  }
+
+  .syo-modal__close-button {
+    @apply absolute right-4 top-4;
+  }
+
+  .syo-modal__header {
+    @apply p-8 relative;
+  }
+
+  .syo-modal__header-text {
+    @apply prose prose-header-3;
+  }
+
+  .syo-modal__subheader-text {
+    @apply prose prose-helper-regular text-gray-500;
+  }
+
+  .syo-modal__children-container {
+    @apply overflow-auto px-8 pb-8;
+  }
+
+  .syo-modal__button-container {
+    @apply p-8 bg-gray-100 flex justify-end;
+  }
+
+  .syo-modal__confirm-button {
+  }
+}

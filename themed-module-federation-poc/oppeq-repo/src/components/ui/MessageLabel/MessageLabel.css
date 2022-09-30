@@ -1,0 +1,15 @@
+@layer components {
+  .syo-message-label__wrapper--error {
+    @apply prose prose-helper-regular text-red flex items-center max-w-max;
+  }
+  .syo-message-label__wrapper--error svg {
+    @apply min-w-min;
+  }
+  .syo-message-label__wrapper--hint {
+    @apply prose prose-helper-regular text-gray-500 max-w-max;
+  }
+
+  .syo-message-label__wrapper .ico {
+    @apply mr-2;
+  }
+}

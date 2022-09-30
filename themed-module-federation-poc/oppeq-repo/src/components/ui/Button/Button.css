@@ -1,0 +1,73 @@
+@layer components {
+  .syo-btn {
+    @apply font-sans border-0 py-2 px-4 font-semibold rounded inline-flex items-center;
+  }
+
+  .syo-btn__icon {
+    @apply bg-transparent fill-current text-white;
+  }
+
+  .syo-btn__icon:hover {
+    @apply bg-transparent;
+  }
+
+  .syo-btn--primary {
+    @apply bg-actionPrimary border-actionPrimary text-white hover:bg-actionAccent;
+  }
+
+  .syo-btn--primary:disabled {
+    @apply bg-gray-300 border border-solid border-gray-400 text-gray-500;
+  }
+
+  .syo-btn--secondary {
+    @apply bg-white border border-solid border-actionPrimary text-actionPrimary hover:border-actionAccent hover:text-actionAccent;
+  }
+
+  .syo-btn--secondary:disabled {
+    @apply bg-white border-gray-400 text-gray-500;
+  }
+
+  .syo-btn--transparent {
+    @apply text-gray-500 !important;
+  }
+
+  .syo-btn--transparent .ico {
+    @apply text-gray-500 !important;
+  }
+
+  .syo-btn--transparent.inverse {
+    @apply fill-current text-white !important;
+  }
+
+  .syo-btn--transparent.inverse .ico {
+    @apply text-white !important;
+  }
+
+  .syo-btn__ico--left {
+    @apply mr-1;
+  }
+
+  .syo-btn__ico--right {
+    @apply ml-1;
+  }
+
+  .syo-btn__ico--primary {
+    @apply text-white;
+  }
+
+  .syo-btn__ico--secondary {
+    @apply text-actionPrimary;
+  }
+
+  .syo-btn__ico--transparent {
+    @apply bg-transparent text-white;
+  }
+
+  .syo-btn:disabled {
+    @apply pointer-events-none;
+  }
+
+  .syo-btn:focus {
+    @apply outline-none;
+  }
+}

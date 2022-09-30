@@ -1,0 +1,138 @@
+@layer components {
+  .syo-select {
+    @apply flex flex-col;
+    width: 250px;
+  }
+
+  .syo-select.select__icon-only {
+    width: auto;
+  }
+
+  .select__control {
+    @apply inline-block p-2 hover:cursor-pointer;
+  }
+
+  .select__control--is-focused {
+    @apply border-actionPrimary !important;
+    box-shadow: 0 0 0 1px #007b80 !important;
+  }
+
+  .select__value-container {
+    @apply flex pt-0 pb-0 pl-0 !important;
+  }
+
+  .select__value-container .label__container {
+    @apply flex-row-reverse mr-1 font-normal;
+  }
+
+  .syo-select--inner-label .select__single-value {
+    @apply font-bold;
+  }
+
+  .syo-select--inner-label .select__labels {
+    min-width: auto;
+  }
+
+  .select--is-rtl .select__value-container {
+    @apply pr-0 !important;
+  }
+
+  .select__icon-only .select__value-container {
+    @apply pr-0 pl-0;
+    overflow: initial;
+  }
+
+  /* this input field occupies space; even when not in use [QAR-321] */
+  .select__value-container input {
+    position: absolute;
+  }
+
+  .select__single-value {
+    @apply mx-0 !important;
+  }
+
+  .select__single-value__avatar--left,
+  .select__single-value__icon--left {
+    @apply mr-3 mx-1;
+  }
+
+  .select--is-rtl .select__single-value__avatar--left,
+  .select--is-rtl .select__single-value__icon--left {
+    @apply mr-1;
+  }
+
+  .select__single-value__avatar--right,
+  .select__single-value__icon--right {
+    @apply ml-3 mx-1;
+  }
+
+  .select--is-rtl .select__single-value__avatar--right,
+  .select--is-rtl .select__single-value__icon--right {
+    @apply ml-1;
+  }
+
+  .select__icon-only .select__single-value__avatar--left,
+  .select__icon-only .select__single-value__avatar--right,
+  .select__icon-only .select__single-value__icon--left,
+  .select__icon-only .select__single-value__icon--right {
+    @apply mx-0 !important;
+  }
+
+  .select__labels {
+    @apply inline-block align-middle;
+    min-width: 140px;
+  }
+
+  .select__sublabel {
+    @apply text-xs text-gray-400 uppercase;
+  }
+
+  .select__label {
+    @apply text-sm leading-4;
+  }
+
+  .select__labels:not(.select__has-sublabel) .select__label {
+    @apply leading-7;
+  }
+
+  .select__indicator {
+    @apply p-0 text-actionPrimary !important;
+  }
+
+  .select__menu {
+    @apply pt-0 pb-0 pl-0 pr-0;
+    min-width: 200px;
+  }
+
+  .select__align-menu--right .select__menu {
+    @apply right-0;
+  }
+
+  .select__option {
+    @apply p-1 pb-2 min-w-min text-primary transition-colors duration-500 ease-in-out cursor-pointer flex items-center hover:cursor-pointer;
+  }
+
+  .select__option-icon {
+    @apply m-1 text-gray-600;
+  }
+
+  .select__option-icon--right {
+    @apply mr-0 ml-2 !important;
+  }
+
+  .select__option-icon--left {
+    @apply ml-0 mr-2 !important;
+  }
+
+  .select__option--is-focused {
+    @apply bg-gray-200 !important;
+  }
+
+  .select__option--is-disabled {
+    @apply cursor-default !important;
+  }
+
+  .select__option--is-selected {
+    @apply bg-actionBg !important;
+  }
+}

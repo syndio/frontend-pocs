@@ -1,0 +1,14 @@
+.syo-tree {
+}
+
+.syo-tree__node {
+  @apply px-1 cursor-pointer flex items-start rounded hover:bg-actionBg;
+}
+
+.syo-tree__node .ico {
+  @apply transform transform-gpu mb-1;
+}
+
+.syo-tree__node--selected {
+  @apply bg-actionPrimary bg-opacity-20 !important;
+}

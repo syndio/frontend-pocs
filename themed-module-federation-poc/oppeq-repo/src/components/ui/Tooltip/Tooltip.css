@@ -1,0 +1,70 @@
+.syo-tooltip {
+  @apply text-left rounded px-4 py-2 max-w-280px z-50 prose prose-helper-regular leading-6;
+  box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+}
+
+.syo-tooltip.syo-tooltip--primary {
+  @apply bg-white;
+}
+
+.syo-tooltip.syo-tooltip--secondary {
+  @apply bg-black text-white;
+}
+
+.syo-tooltip > .syo-tooltip__arrow {
+  @apply absolute w-1 h-1;
+}
+
+.syo-tooltip.secondary > .syo-tooltip__arrow {
+  @apply invisible;
+}
+
+.syo-tooltip > .syo-tooltip__arrow:after {
+  @apply absolute bg-white left-0;
+
+  content: ' ';
+  top: -25px;
+  transform: rotate(45deg);
+  width: 10px;
+  height: 10px;
+}
+
+.syo-tooltip.syo-tooltip--secondary > .syo-tooltip__arrow:after {
+  @apply bg-black;
+}
+
+.syo-tooltip[data-popper-placement^='top'] > .syo-tooltip__arrow {
+  bottom: -30px;
+}
+
+.syo-tooltip[data-popper-placement='top'] > .syo-tooltip__arrow:after {
+  top: -32px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.syo-tooltip[data-popper-placement^='bottom'] > .syo-tooltip__arrow:after {
+  top: -12px;
+  box-shadow: -1px -1px 1px rgb(0 0 0 / 10%);
+}
+
+.syo-tooltip[data-popper-placement^='left'] > .syo-tooltip__arrow {
+  right: 1px;
+}
+
+.syo-tooltip[data-popper-placement^='left'] > .syo-tooltip__arrow:after {
+  top: 0;
+  box-shadow: 1px 0 0 0 rgb(0 0 0 / 10%);
+}
+
+.syo-tooltip[data-popper-placement^='right'] > .syo-tooltip__arrow {
+  left: -5px;
+}
+
+.syo-tooltip[data-popper-placement^='right'] > .syo-tooltip__arrow:after {
+  top: 0;
+  box-shadow: 0 1px 0 0 rgb(0 0 0 / 10%);
+}
+
+.syo-tooltip.prose p {
+  @apply mt-0;
+}

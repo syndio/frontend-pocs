@@ -1,0 +1,42 @@
+.syo-text-input__wrapper {
+  @apply flex flex-col relative;
+}
+
+.syo-text-input {
+  @apply border-gray-400 border rounded p-2 w-full text-secondary;
+}
+
+.syo-text-input:focus {
+  @apply border-actionPrimary outline-none;
+}
+
+.syo-text-input:disabled {
+  @apply bg-gray-200 text-secondary;
+}
+
+.syo-text-input__suffix {
+  @apply absolute right-0 top-0 h-full flex items-center font-normal;
+}
+
+.syo-text-input--error {
+  @apply border-red;
+}
+
+.syo-text-input__input_container {
+  @apply relative;
+}
+
+.syo-text-input__icon {
+  @apply text-gray-400 absolute top-3 left-2;
+}
+
+.syo-text-input__input_icon {
+  @apply pl-8;
+}
+
+/* https://github.com/tailwindlabs/tailwindcss/discussions/7429 appearance-none does not handle arrows in numbers input */
+.syo-text-input[type='number']::-webkit-inner-spin-button,
+.syo-text-input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

@@ -1,0 +1,78 @@
+@layer components {
+  .syo-pagination {
+    @apply flex flex-col items-center justify-center sm:flex-row sm:justify-between;
+  }
+
+  .syo-pagination .syo-text-input {
+    @apply px-1 text-center;
+  }
+
+  .syo-pagination__navigation {
+    @apply flex items-center justify-between;
+  }
+
+  .syo-pagination__navigation button svg {
+    @apply text-actionPrimary;
+  }
+
+  .syo-pagination__navigation button:disabled svg {
+    @apply text-gray-300 cursor-not-allowed;
+  }
+
+  .syo-pagination__summary {
+    @apply mr-2 mb-5 sm:mb-0;
+  }
+
+  .syo-pagination__indicator {
+    @apply mx-5;
+  }
+
+  .syo-pagination__indicator--container {
+    @apply flex items-center;
+  }
+
+  .syo-pagination__current-page {
+    @apply w-16 mr-2;
+  }
+
+  .syo-pagination__current-page .syo-text-input__wrapper {
+    @apply w-full;
+  }
+
+  .syo-pagination__wrapper button svg {
+    @apply text-actionPrimary;
+  }
+
+  .syo-pagination__wrapper button:disabled svg {
+    @apply text-gray-300 cursor-not-allowed;
+  }
+
+  .syo-pagination__total-pages {
+    @apply pl-1;
+  }
+
+  .syo-pagination__first {
+    @apply mr-2;
+  }
+
+  .syo-pagination__prev {
+    @apply mx-2;
+  }
+
+  .syo-pagination__next {
+    @apply mx-2;
+  }
+
+  .syo-pagination__last {
+    @apply ml-2;
+  }
+
+  .syo-pagination__wrapper .syo-text-input {
+    @apply px-1 text-center;
+  }
+
+  .syo-pagination__wrapper input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    @apply -ml-4;
+  }
+}

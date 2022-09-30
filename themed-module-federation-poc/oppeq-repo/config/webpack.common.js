@@ -59,11 +59,12 @@ module.exports = {
 
       // Styles: Inject CSS into the head with source maps
       {
-        test: /\.(css|scss|sass)$/,
+        // test: /\.(css|scss|sass)$/,
+        test: /\.(css)$/,
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
-          'sass-loader',
+          // 'sass-loader', // breaks @tailwind/typography https://stackoverflow.com/questions/68898511/tailwindcss-typography-sasscsyntaxerror-error-unterminated-attribute-select
           {
             loader: 'postcss-loader', // postcss loader needed for tailwindcss
             options: {

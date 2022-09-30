@@ -1,0 +1,7 @@
+.label__wrapper {
+  @apply flex prose prose-helper-heavy;
+}
+
+.label--required {
+  @apply text-red pl-1;
+}

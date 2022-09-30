@@ -1,0 +1,59 @@
+@layer components {
+  .syo-multi-select__value-display.syo-multi-select--error {
+    @apply border-red;
+  }
+
+  .syo-multi-select .syo-multi-select__menu {
+    @apply static border-none shadow-none mt-0;
+  }
+
+  .syo-multi-select__checkbox.syo-checkbox-container-label:not(:last-of-type) {
+    @apply pb-2 pl-4 pr-4 pt-2;
+  }
+
+  .syo-multi-select__checkbox.syo-checkbox-container-label:last-of-type {
+    @apply pb-4 pl-4 pr-4 pt-2;
+  }
+
+  .syo-checkbox-container-label {
+    @apply text-actionPrimary prose;
+  }
+
+  .syo-multi-select__edit-all {
+    @apply prose prose-helper-heavy text-actionPrimary pl-4 pr-4;
+  }
+
+  .syo-multi-select__search {
+    @apply pl-2 pr-2 pb-4;
+  }
+
+  .syo-multi-select__inner-wrapper {
+    @apply rounded-sm absolute w-full bg-white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .syo-multi-select .syo-multi-select__control {
+    @apply flex-nowrap overflow-auto border-none mt-3;
+  }
+
+  .syo-multi-select__value-display {
+    @apply prose text-primary p-2 flex border-gray-400 border rounded items-center justify-between leading-4;
+  }
+
+  .syo-multi-select__option.syo-multi-select__option--is-focused,
+  .syo-multi-select__option.syo-multi-select__option--is-selected {
+    @apply bg-white;
+  }
+
+  .syo-multi-select__outer-wrapper {
+    @apply relative;
+  }
+
+  .syo-multi-select__placeholder {
+    @apply text-gray-500;
+  }
+
+  .syo-multi-select__menuList {
+    @apply overflow-auto max-h-16;
+  }
+}
