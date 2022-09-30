@@ -23,3 +23,6 @@ Visit: http://localhost:2112/
 - [ ] Support TS Types when consuming exposed components
 - [ ] Support utility libraries
 - [ ] Support NPM packages and versioning
+
+## Trade offs
+* Had to eject in order to use a recent version of React & PostCSS
