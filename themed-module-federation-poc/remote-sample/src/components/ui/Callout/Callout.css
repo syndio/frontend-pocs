@@ -1,0 +1,14 @@
+.syo-callout__icon {
+  @apply flex-none mr-8;
+}
+
+.syo-callout__wrapper {
+  @apply font-sans flex border border-solid rounded-md p-8;
+}
+
+
+.syo-callout p {
+  @apply mb-4;
+}
+
+

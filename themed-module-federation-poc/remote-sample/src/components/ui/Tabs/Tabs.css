@@ -1,0 +1,15 @@
+.syo-tabs__nav {
+  @apply flex mb-7 border-b border-borderLight border-solid;
+}
+
+.syo-tabs__tab {
+  @apply transition-colors ease-in-out delay-150 pb-3 mr-3 border-solid border-b-4 border-transparent cursor-pointer bg-transparent border-t-0 border-l-0 border-r-0 pl-0 pr-0 pt-0;
+}
+
+.syo-tabs__tab:focus {
+  @apply outline-none;
+}
+
+.syo-tabs__tab--selected {
+  @apply border-actionPrimary font-bold;
+}

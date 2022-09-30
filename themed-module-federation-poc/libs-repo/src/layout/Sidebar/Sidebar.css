@@ -1,0 +1,28 @@
+.sidebar {
+  /* @apply fixed z-10 left-0 bg-white flex flex-col py-10 bg-blue-300;
+  height: calc(100% - 60px);*/
+}
+
+.sidebar ul li a {
+  @apply px-2 py-1 block rounded-sm;
+}
+
+.sidebar ul li a:hover {
+  @apply bg-teal-200/25;
+}
+
+.sidebar ul li.selected a {
+  @apply bg-teal-200/50 font-bold;
+}
+
+.link {
+  @apply prose pl-7 py-2;
+}
+
+.link--active {
+  
+}
+
+.link--inactive {
+  
+}

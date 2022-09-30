@@ -1,0 +1,10 @@
+declare module "UI/Button";
+declare module "UI/Callout";
+declare module "UI/Tabs";
+declare module "UI/Tab";
+declare module "UI/Header";
+declare module "UI/Sidebar";
+declare module "UI/Main";
+declare module "UI/Layout";
+declare module "libs/react";
+declare module "libs/react-dom";

@@ -1,0 +1,15 @@
+.info {
+  @apply bg-gray-100 text-xs p-3 flex mb-4 rounded-md;
+}
+
+.info__icon {
+  @apply grow-0 p-2 pl-0 pr-2 mr-4 border-r border-borderLight flex align-baseline;
+}
+
+.info__copy {
+  @apply grow;
+}
+
+.info__copy__row {
+  @apply mb-1;
+}
