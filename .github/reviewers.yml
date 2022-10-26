@@ -1,6 +1,20 @@
 reviewers:
   # Reviewer groups each of which has a list of GitHub usernames
   groups:
+    frontend:
+      - ElysiumTan
+      - jessicasm
+      - jonbukiewicz
+      - David-Rubin
+      - nibblebot
+      - rfinni
+      - gladysum-syndio
+      - sam3k
+      - scott-wilkins
+      - jwthomps-syndio
+      - lenaripple
+      - toby-syndio
+      - fenghsieh
     payeq:
       - ElysiumTan
       - jessicasm
@@ -23,43 +37,43 @@ reviewers:
   per_author:
     ElysiumTan:
       - payeq # group
-      - team:frontend # group
+      - frontend # group
     jessicasm:
       - payeq # group
-      - team:frontend # group
+      - frontend # group
     jonbukiewicz:
       - payeq # group
-      - team:frontend # group
+      - frontend # group
     David-Rubin:
       - payeq # group
-      - team:frontend # group
+      - frontend # group
     rfinni:
       - payfinder # group
-      - team:frontend # group
+      - frontend # group
     nibblebot:
       - payfinder # group
-      - team:frontend # group
+      - frontend # group
     sam3k:
       - foundations # group
-      - team:frontend # group
+      - frontend # group
     gladysum-syndio:
       - foundations # group
-      - team:frontend # group
+      - frontend # group
     scott-wilkins:
       - data_management # group
-      - team:frontend # group
+      - frontend # group
     jwthomps-syndio:
       - data_management # group
-      - team:frontend # group
+      - frontend # group
     lenaripple:
       - oppeq # group
-      - team:frontend # group
+      - frontend # group
     toby-syndio:
       - oppeq # group
-      - team:frontend # group
+      - frontend # group
     fenghsieh:
       - oppeq # group
-      - team:frontend # group
+      - frontend # group
 
 options:
   ignore_draft: true
