@@ -10,7 +10,7 @@ npm install
 ```
 
 ## Running it
-To run, you need three terminal windows. 
+To run, you need four terminal windows. 
 
 ### Terminal #1: Event streams server
 ```
