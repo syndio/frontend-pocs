@@ -31,16 +31,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn lint-staged --verbose"
-    }
-  },
-  "lint-staged": {
-    "*.{js,jsx}": [
-      "eslint --fix"
-    ]
-  },
   "jest": {
     "testEnvironment": "jsdom",
     "moduleNameMapper": {
@@ -81,7 +71,6 @@
     "html-webpack-plugin": "^5.5.0",
     "husky": "^7.0.1",
     "jest": "^27.0.6",
-    "lint-staged": "^11.1.2",
     "mini-css-extract-plugin": "^2.6.1",
     "node-sass": "^6.0.1",
     "postcss": "^8.4.14",
