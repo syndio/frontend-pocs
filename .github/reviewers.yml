@@ -1,0 +1,86 @@
+reviewers:
+  # Reviewer groups each of which has a list of GitHub usernames
+  groups:
+    frontend:
+      - ElysiumTan
+      - jessicasm
+      - jonbukiewicz
+      - David-Rubin
+      - nibblebot
+      - rfinni
+      - gladysum-syndio
+      - sam3k
+      - scott-wilkins
+      - jwthomps-syndio
+      - lenaripple
+      - toby-syndio
+      - fenghsieh
+    payeq:
+      - ElysiumTan
+      - jessicasm
+      - jonbukiewicz
+      - David-Rubin
+    payfinder:
+      - nibblebot
+      - rfinni
+    foundations:
+      - gladysum-syndio
+      - sam3k
+    data_management:
+      - scott-wilkins
+      - jwthomps-syndio
+    oppeq:
+      - lenaripple
+      - toby-syndio
+      - fenghsieh
+
+  per_author:
+    ElysiumTan:
+      - payeq # group
+      - frontend # group
+    jessicasm:
+      - payeq # group
+      - frontend # group
+    jonbukiewicz:
+      - payeq # group
+      - frontend # group
+    David-Rubin:
+      - payeq # group
+      - frontend # group
+    rfinni:
+      - payfinder # group
+      - frontend # group
+    nibblebot:
+      - payfinder # group
+      - frontend # group
+    sam3k:
+      - foundations # group
+      - frontend # group
+    gladysum-syndio:
+      - foundations # group
+      - frontend # group
+    scott-wilkins:
+      - data_management # group
+      - frontend # group
+    jwthomps-syndio:
+      - data_management # group
+      - frontend # group
+    lenaripple:
+      - oppeq # group
+      - frontend # group
+    toby-syndio:
+      - oppeq # group
+      - frontend # group
+    fenghsieh:
+      - oppeq # group
+      - frontend # group
+
+options:
+  ignore_draft: true
+  ignored_keywords:
+    - DO NOT REVIEW
+  enable_group_assignment: false
+
+  # Randomly pick reviewers up to this number.
+  # Do not set this option if you'd like to assign all matching reviewers.
+  number_of_reviewers: 2
